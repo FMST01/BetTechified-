@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeTechified — Learn to Build. Build to Launch.</title>
+<link rel="stylesheet" href="Style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style></style>
+</head>
+<body>
+<nav>
+<div class="logo">BE<span>TECHIFIED</span></div>
+<div class="nav-links">
+<a href="#programs">Programs</a>
+<a href="#steps">How it works</a>
+<a href="#stats">Impact</a>
+</div>
+<a href="#apply" class="nav-cta">Apply now</a>
+</nav>
+
+<section class="hero">
+<div class="hero-inner">
+<div>
+<div class="eyebrow"><span class="dot"></span> COHORT 09 · APPLICATIONS OPEN</div>
+<h1>Learn to build.<br><span class="grad">Build to launch.</span></h1>
+<p>BeTechified trains Africa's next generation of developers through cohort-based programs that turn beginners into shipped-product engineers — with mentors, real projects, and a community behind every line of code.</p>
+<div class="hero-actions">
+<a href="#apply" class="btn-primary">Apply to a cohort →</a>
+<a href="#programs" class="btn-ghost">See programs</a>
+</div>
+</div>
+<div class="code-panel">
+<div class="code-head">
+<span></span><span></span><span></span>
+<small>techie.js</small>
+</div>
+<div class="code-body" id="typer"></div>
+</div>
+</div>
+</section>
+
+<section class="programs" id="programs">
+<div class="section-head reveal">
+<span class="section-tag">Programs</span>
+<h2>Pick your track. Build for real.</h2>
+<p>Every cohort is project-first — you leave with a portfolio, not just a certificate.</p>
+</div>
+<div class="program-grid">
+<div class="program-card reveal">
+<div class="program-icon">FE</div>
+<h3>Frontend Development</h3>
+<p>HTML, CSS, JavaScript and React — build interfaces people actually enjoy using.</p>
+<div class="program-meta"><span>12 weeks</span><span>Beginner-friendly</span></div>
+</div>
+<div class="program-card reveal">
+<div class="program-icon">PM</div>
+<h3>Product Management</h3>
+<p>Learn to scope, prioritize, and ship — from user research to roadmap.</p>
+<div class="program-meta"><span>10 weeks</span><span>No code required</span></div>
+</div>
+<div class="program-card reveal">
+<div class="program-icon">SM</div>
+<h3>Social Media Strategy</h3>
+<p>Content systems, audits, and calendars that turn followers into customers.</p>
+<div class="program-meta"><span>8 weeks</span><span>Portfolio-based</span></div>
+</div>
+</div>
+</section>
+
+<section class="steps-section" id="steps">
+<div class="section-head reveal">
+<span class="section-tag">The STEPS process</span>
+<h2>From application to launch.</h2>
+<p>Every Techie moves through the same four STEPS — designed to build skill and momentum in order.</p>
+</div>
+<div class="steps-list">
+<div class="step-row reveal">
+<div class="step-num">01</div>
+<div class="step-content">
+<h3>Apply & assess</h3>
+<p>Tell us where you're starting from — no prior experience required for most tracks.</p>
+</div>
+</div>
+<div class="step-row reveal">
+<div class="step-num">02</div>
+<div class="step-content">
+<h3>Learn with a cohort</h3>
+<p>Live sessions, structured curriculum, and peers building alongside you.</p>
+</div>
+</div>
+<div class="step-row reveal">
+<div class="step-num">03</div>
+<div class="step-content">
+<h3>Build real projects</h3>
+<p>Ship work for real use cases, reviewed by mentors and industry practitioners.</p>
+</div>
+</div>
+<div class="step-row reveal">
+<div class="step-num">04</div>
+<div class="step-content">
+<h3>Launch your career</h3>
+<p>Graduate with a portfolio, a network, and support into your first tech role.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="stats-section" id="stats">
+<div class="section-head reveal">
+<span class="section-tag" style="color:var(--sky)">Impact</span>
+<h2 style="color:white">Numbers from the community.</h2>
+</div>
+<div class="stats-grid">
+<div class="stat reveal"><h3>900+</h3><p>Techies trained</p></div>
+<div class="stat reveal"><h3>9</h3><p>Cohorts graduated</p></div>
+<div class="stat reveal"><h3>85%</h3><p>Job-ready within 3 months</p></div>
+<div class="stat reveal"><h3>4</h3><p>Career tracks offered</p></div>
+</div>
+</section>
+
+<section class="cta-section" id="apply">
+<div class="cta-box reveal">
+<h2>Your next cohort starts soon.</h2>
+<p>Applications for Cohort 09 close soon — spots are limited to keep mentorship close.</p>
+<a href="#" class="btn-primary" style="background:linear-gradient(135deg, var(--electric), var(--sky)); color:white;">Start your application →</a>
+</div>
+</section>
+
+<div id="weather-box">
+<h2 id="city">--</h2>
+<p id="temp">--°C</p>
+<p id="wind">Wind: -- km/h</p>
+</div>
+
+<footer>
+<div class="logo">BE<span style="color:var(--sky)">TECHIFIED</span></div>
+<div class="footer-links">
+<a href="#programs">Programs</a>
+<a href="#steps">Process</a>
+<a href="#stats">Impact</a>
+<a href="#apply">Apply</a>
+</div>
+<div style="font-size:0.85rem;">©️ 2026 BeTechified Africa</div>
+</footer>
+<script src="web.js"></script>
+</body>
+<script>
+ fetch('https://api.open-meteo.com/v1/forecast?latitude=6.5244&longitude=3.3792&current_weather=true')
+   .then(res => res.json())
+   .then(data => console.log(data));
+</script>

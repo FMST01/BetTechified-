@@ -1,0 +1,93 @@
+. {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   
+}
+ 
+header {
+    background-color: darkblue;
+    color: white;
+    height: 100px;
+    padding-top: 20px;
+    border-bottom: 3px red solid; 
+   display: flex;
+   justify-content: space-between; text-align: center;
+   padding-left: 20px; padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 12px;
+    
+}
+header a:hover {
+    color: yellow;
+    font-weight: solid;
+}
+
+html,body {
+    overflow-x: hidden;
+}
+body {
+    padding-bottom: 100px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero1 {
+    
+    width: 1500pxpx;
+    background-color: blue;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px; padding-top: 5px; padding-bottom: 60px; padding-right: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: justify;
+    font-size: larger;
+}
+
+.hero2 {
+     width: 1500px;
+    background-color: blue;
+    margin-top: 0;
+    padding-left: 30px; padding-top: 5px; padding-bottom: 5px; padding-right: 30px;
+    color: white;
+    text-align: justify; font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero3 {
+     width: 1500pxpx;
+    background-color: blue;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px; padding-top: 5px; padding-bottom: 100px; padding-right: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: justify;
+    font-size: larger;
+}
+
+img {
+    border-radius: 50px;
+}
+h2 {
+    background-color: darkblue;
+    width: 120px;
+    text-align: center; padding-top: 5px; padding-bottom: 7px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    border-top: 3px solid red;
+    text-align: center; 
+}
+
