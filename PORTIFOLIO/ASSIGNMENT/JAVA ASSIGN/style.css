@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+   background-color: aliceblue;
+}
+
+
+.logo {
+    color: white;
+font-size: x-large; font-style: oblique;
+
+}
+.navbar {
+    display: flex;
+    background-color: darkred;
+    padding-top: 30px;
+    padding-bottom: 30PX;
+    padding-left: 15px; padding-right: 15px;
+     justify-content: space-between;
+     
+    
+}
+
+.nav-links {
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.welcome {
+  background-color: aliceblue;
+  min-height: 40dvh;
+  padding-top: 10rem;
+  padding-top: 2rem;
+ height: 70dvh;
+}
+
+.great {
+  color:red;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(2.5rem, 3vw, 2.5rem);
+}
+#fi {
+  text-align: center;
+  color: darkblue;
+  text-align: center;
+}
+
+#get {
+  
+  background-color: darkred;
+  color: white;
+  padding-left: 0.7rem; padding-right: 0.7rem; padding-bottom: 0.7rem;padding-top: 0.7rem;
+  border-radius: 40px;
+  align-items: center;
+  display: block;
+  border: none;
+  margin: 0.7vh auto 0;
+}
+
+
+
+
+form {
+  background-color: darkred;
+  width: 20rem; color: white;
+  text-align: center;
+margin-left: 10rem; padding-top: 2rem; padding-bottom: 2rem;
+margin-bottom: 30px; margin-top: 30px;
+
+}
+
+input {
+  padding: 5px; border-radius: 30px;
+  border: none;
+}
+
+textarea {
+ resize: vertical;
+}
+
+#btn {
+  width: 70px;
+  background-color: white;
+  color: darkred;
+  padding: 3px; border-radius: 5px;
+  font-size: 16px;
+}
+
+footer {
+  background-color: darkred;
+  padding-top: 20px; padding-bottom: 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.advert {
+  color: red;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+margin-left: 30px; font-weight: bold;
+}
+    
